@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wandersplit — Travel Together. Split Seamlessly.</title>
+  <meta name="description" content="Wandersplit eliminates the awkwardness of group trip expenses through a beautiful, smart debt-minimization engine." />
+  <meta name="author" content="Rami Issa" />
+  <meta property="og:title" content="Wandersplit — Travel Together. Split Seamlessly." />
+  <meta property="og:description" content="A beautiful group travel expense splitter with automatic debt minimization. No sign-up, no backend — just open and split." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">Wandersplit</span>
+      </a>
+
+      <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"         class="nav-link">Home</a></li>
+        <li><a href="#features"     class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#dashboard"    class="nav-link">Dashboard</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="toggle-track">
+            <span class="toggle-thumb">
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="4.5"/>
+                <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
+                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+                <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+              </svg>
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </span>
+          </span>
+        </button>
+
+        <a href="#dashboard" class="btn btn-nav-cta">Launch App</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <!-- Decorative background -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-eyebrow reveal">
+        <span class="eyebrow-dot"></span>
+        Smart group expense management
+      </div>
+
+      <h1 class="hero-heading reveal reveal-d1">
+        Travel Together.<br/>
+        <em>Split Seamlessly.</em>
+      </h1>
+
+      <p class="hero-sub reveal reveal-d2">
+        Wandersplit dissolves the financial friction of group travel — no more awkward spreadsheets,
+        forgotten venmos, or trip-ending arguments. One beautiful engine settles it all.
+      </p>
+
+      <div class="hero-actions reveal reveal-d3">
+        <a href="#dashboard" class="btn btn-primary btn-large">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.86L12 17.77l-6.18 3.23L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Start Splitting
+        </a>
+        <a href="#how-it-works" class="btn btn-ghost btn-large">
+          Learn More
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-social-proof reveal reveal-d4">
+        <div class="proof-avatars">
+          <span class="proof-av" style="--c:oklch(72% 0.12 50)">A</span>
+          <span class="proof-av" style="--c:oklch(64% 0.14 200)">M</span>
+          <span class="proof-av" style="--c:oklch(58% 0.14 140)">S</span>
+          <span class="proof-av" style="--c:oklch(66% 0.12 300)">R</span>
+        </div>
+        <p>Trusted by <strong>12,000+</strong> travelers worldwide</p>
+      </div>
+    </div>
+
+    <!-- Floating stat cards -->
+    <div class="hero-float-cards" aria-hidden="true">
+      <div class="float-card float-card-1 reveal reveal-d2">
+        <div class="float-card-icon">⚡</div>
+        <div>
+          <div class="float-card-value">0</div>
+          <div class="float-card-label">Spreadsheets needed</div>
+        </div>
+      </div>
+      <div class="float-card float-card-2 reveal reveal-d3">
+        <div class="float-card-icon">✦</div>
+        <div>
+          <div class="float-card-value">8+</div>
+          <div class="float-card-label">Currencies supported</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FEATURES / PROBLEMS SOLVED
+  ══════════════════════════════════════ -->
+  <section class="features-section section-pad" id="features">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="section-eyebrow">What it solves</div>
+        <h2 class="section-heading">Every pain point, <em>eliminated.</em></h2>
+        <p class="section-sub">From a weekend hike to a month-long expedition, Wandersplit handles every money moment with grace.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="8" y="10" width="32" height="28" rx="3"/>
+              <line x1="8" y1="18" x2="40" y2="18"/>
+              <line x1="16" y1="10" x2="16" y2="18"/>
+              <line x1="32" y1="10" x2="32" y2="18"/>
+              <line x1="16" y1="26" x2="24" y2="26"/>
+              <line x1="16" y1="32" x2="22" y2="32"/>
+              <path d="M30 27l3 3 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">No More Spreadsheets</h3>
+          <p class="feature-body">Ditch the cobbled-together Excel file. Wandersplit's live dashboard replaces every manual ledger your group ever suffered through.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-d1">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="14"/>
+              <path d="M24 16v8l5 3" stroke-linecap="round"/>
+              <path d="M10 24H6M42 24h-4M24 6V2M24 46v-4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Automatic Debt Minimization</h3>
+          <p class="feature-body">Our settlement engine reduces the number of transactions to the mathematical minimum, so fewer people have to pay each other back.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-d2">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="18" cy="24" r="10"/>
+              <circle cx="30" cy="24" r="10"/>
+              <path d="M24 18c2.2 1.5 3.5 3.5 3.5 6s-1.3 4.5-3.5 6" stroke-linecap="round"/>
+              <path d="M24 18c-2.2 1.5-3.5 3.5-3.5 6s1.3 4.5 3.5 6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Multi-Currency Support</h3>
+          <p class="feature-body">USD, EUR, GBP, JOD, JPY and more. Log expenses in whichever currency you paid in, and Wandersplit keeps it clean and separate.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-d3">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 24l9 9 27-18" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Instant Settlements</h3>
+          <p class="feature-body">Tap recalculate and see exactly who pays whom in seconds. Clear, direct, and indisputable — the trip ends with everyone at peace.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-d1">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="10" y="8" width="28" height="32" rx="3"/>
+              <circle cx="24" cy="20" r="6"/>
+              <path d="M12 38c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Custom Split Rules</h3>
+          <p class="feature-body">Not everyone shares every expense. Choose exactly who splits each cost — split the hotel with five but the romantic dinner with two.</p>
+        </div>
+
+        <div class="feature-card reveal reveal-d2">
+          <div class="feature-icon-wrap">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <ellipse cx="24" cy="24" rx="16" ry="10"/>
+              <path d="M8 24v8c0 5.5 7.2 10 16 10s16-4.5 16-10v-8" stroke-linecap="round"/>
+              <path d="M8 28c0 5.5 7.2 10 16 10s16-4.5 16-10" stroke-linecap="round" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Persistent Memory</h3>
+          <p class="feature-body">Your trip data lives in your browser. Refresh, close the tab, come back three days later — everything is exactly where you left it.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       HOW IT WORKS
+  ══════════════════════════════════════ -->
+  <section class="hiw-section section-pad" id="how-it-works">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="section-eyebrow">How it works</div>
+        <h2 class="section-heading">Three steps to <em>total clarity.</em></h2>
+      </div>
+
+      <div class="hiw-track">
+
+        <!-- Step connector line -->
+        <div class="hiw-connector" aria-hidden="true"></div>
+
+        <div class="hiw-step reveal">
+          <div class="hiw-step-num">01</div>
+          <div class="hiw-step-body">
+            <div class="hiw-icon-wrap">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="32" cy="28" r="12"/>
+                <path d="M12 52c0-11 9-20 20-20s20 9 20 20" stroke-linecap="round"/>
+                <circle cx="48" cy="22" r="8"/>
+                <path d="M56 42c0-7.7-3.6-13-8-13" stroke-linecap="round"/>
+                <path d="M44 18v8M40 22h8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="hiw-step-text">
+              <h3>Add your travel crew</h3>
+              <p>Type in the names of everyone on the trip. Takes ten seconds. No accounts, no sign-ups, no email confirmation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hiw-step reveal reveal-d1">
+          <div class="hiw-step-num">02</div>
+          <div class="hiw-step-body">
+            <div class="hiw-icon-wrap">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="10" y="14" width="44" height="36" rx="4"/>
+                <line x1="10" y1="24" x2="54" y2="24"/>
+                <line x1="24" y1="14" x2="24" y2="24"/>
+                <line x1="40" y1="14" x2="40" y2="24"/>
+                <line x1="20" y1="34" x2="32" y2="34"/>
+                <line x1="20" y1="42" x2="28" y2="42"/>
+                <path d="M38 36l4 4 8-8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="hiw-step-text">
+              <h3>Record expenses as you go</h3>
+              <p>Who paid for the riad? Who covered the taxi? Log each expense live, choose the currency, and decide who it should be split between.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hiw-step reveal reveal-d2">
+          <div class="hiw-step-num">03</div>
+          <div class="hiw-step-body">
+            <div class="hiw-icon-wrap">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 32h32M36 22l12 10-12 10" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="16" cy="32" r="8"/>
+                <circle cx="48" cy="32" r="8"/>
+              </svg>
+            </div>
+            <div class="hiw-step-text">
+              <h3>Wandersplit settles the debts</h3>
+              <p>Hit recalculate. Our engine computes the minimum number of transfers needed to make everyone perfectly even. Clean, final, done.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       INTERACTIVE DASHBOARD (THE APP)
+  ══════════════════════════════════════ -->
+  <section class="dashboard-section section-pad" id="dashboard">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Live Expense Dashboard</div>
+        <h2 class="section-heading">Your trip's financial <em>command center.</em></h2>
+        <p class="section-sub">Fully interactive — add travelers, log expenses, and watch the settlement engine work in real time. Your data is saved automatically.</p>
+      </div>
+
+      <!-- ─── APP SHELL ─── -->
+      <div class="app-shell reveal">
+        <!-- App chrome bar -->
+        <div class="app-chrome">
+          <div class="chrome-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <div class="chrome-title">wandersplit — live dashboard</div>
+          <div class="chrome-spacer"></div>
+        </div>
+
+        <!-- App content grid -->
+        <div class="app-grid">
+
+          <!-- ── Sidebar ── -->
+          <aside class="app-sidebar">
+
+            <!-- Travelers Card -->
+            <div class="app-card" id="travelersCard">
+              <div class="app-card-header">
+                <h3 class="app-card-title">Travelers</h3>
+                <span class="badge" id="travelerCount">0</span>
+              </div>
+              <div class="add-traveler-row">
+                <input type="text" id="travelerInput" class="field-input" placeholder="Add a name…" maxlength="32" autocomplete="off"/>
+                <button class="btn btn-accent btn-icon-sq" id="addTravelerBtn" aria-label="Add traveler">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                </button>
+              </div>
+              <ul class="traveler-list" id="travelerList"></ul>
+              <p class="empty-hint" id="travelerHint">Add at least two travelers to begin.</p>
+            </div>
+
+            <!-- Add Expense Card -->
+            <div class="app-card" id="expenseFormCard">
+              <div class="app-card-header">
+                <h3 class="app-card-title">Add Expense</h3>
+              </div>
+
+              <div class="form-group">
+                <label class="field-label" for="expenseTitle">Title</label>
+                <input type="text" id="expenseTitle" class="field-input" placeholder="e.g. Hotel, Dinner, Taxi…" maxlength="64"/>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="field-label" for="expenseAmount">Amount</label>
+                  <div class="input-prefix-wrap">
+                    <span class="input-prefix" id="currencySymbol">$</span>
+                    <input type="number" id="expenseAmount" class="field-input field-prefixed" placeholder="0.00" min="0" step="0.01"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="field-label" for="expenseCurrency">Currency</label>
+                  <select id="expenseCurrency" class="field-input field-select">
+                    <option value="USD" data-symbol="$">USD $</option>
+                    <option value="EUR" data-symbol="€">EUR €</option>
+                    <option value="GBP" data-symbol="£">GBP £</option>
+                    <option value="JOD" data-symbol="JD">JOD JD</option>
+                    <option value="AED" data-symbol="AED">AED</option>
+                    <option value="JPY" data-symbol="¥">JPY ¥</option>
+                    <option value="CAD" data-symbol="CA$">CAD CA$</option>
+                    <option value="AUD" data-symbol="A$">AUD A$</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="field-label" for="expensePaidBy">Paid by</label>
+                <select id="expensePaidBy" class="field-input field-select">
+                  <option value="" disabled selected>Select traveler…</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="field-label">Split type</label>
+                <div class="split-type-group" id="splitTypeGroup">
+                  <label class="radio-pill">
+                    <input type="radio" name="splitType" value="equal" checked/>
+                    <span>Split equally</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="splitType" value="custom"/>
+                    <span>Choose who</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" id="customSplitGroup" style="display:none;">
+                <label class="field-label">Include in split</label>
+                <div class="checkbox-grid" id="splitCheckboxes"></div>
+              </div>
+
+              <button class="btn btn-primary btn-full" id="addExpenseBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.86L12 17.77l-6.18 3.23L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Record Expense
+              </button>
+            </div>
+
+          </aside>
+
+          <!-- ── Main content ── -->
+          <div class="app-main">
+
+            <!-- Expenses -->
+            <div class="app-card">
+              <div class="app-card-header">
+                <h3 class="app-card-title">Expenses</h3>
+                <div class="app-card-actions">
+                  <span class="total-badge" id="totalBadge">Total: $0.00</span>
+                  <button class="btn btn-ghost btn-sm" id="clearExpensesBtn" style="display:none;">Clear all</button>
+                </div>
+              </div>
+              <ul class="expense-list" id="expenseList"></ul>
+              <div class="empty-state" id="expenseEmpty">
+                <div class="empty-icon">✦</div>
+                <p>No expenses yet. Add travelers, then log your first expense.</p>
+              </div>
+            </div>
+
+            <!-- Settlement -->
+            <div class="app-card settlement-card">
+              <div class="app-card-header">
+                <h3 class="app-card-title">Settlement</h3>
+                <button class="btn btn-ghost btn-sm" id="calcBtn">Recalculate</button>
+              </div>
+              <ul class="settlement-list" id="settlementList"></ul>
+              <div class="empty-state" id="settlementEmpty">
+                <div class="empty-icon">⇌</div>
+                <p>Add expenses to see who owes whom.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- /app-grid -->
+      </div><!-- /app-shell -->
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════ -->
+  <section class="testimonials-section section-pad" id="testimonials">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Reviews</div>
+        <h2 class="section-heading">What travelers <em>say.</em></h2>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">✦ ✦ ✦ ✦ ✦</div>
+          <blockquote class="testimonial-quote">
+            "We had seven people on a two-week Morocco trip. Wandersplit made the final day reckoning painless — three transactions and we were done."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-av" style="--c:oklch(62% 0.14 50)">L</div>
+            <div>
+              <div class="testimonial-name">Layla K.</div>
+              <div class="testimonial-role">Marrakech, 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-d1">
+          <div class="testimonial-stars">✦ ✦ ✦ ✦ ✦</div>
+          <blockquote class="testimonial-quote">
+            "I've tried every group expense app out there. Wandersplit is the only one that doesn't feel like it was built by a spreadsheet."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-av" style="--c:oklch(56% 0.14 200)">D</div>
+            <div>
+              <div class="testimonial-name">David R.</div>
+              <div class="testimonial-role">Southeast Asia, 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-d2">
+          <div class="testimonial-stars">✦ ✦ ✦ ✦ ✦</div>
+          <blockquote class="testimonial-quote">
+            "The multi-currency support saved our Eurotrip. We had euros, pounds, and złoty flying around and Wandersplit kept everything immaculate."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-av" style="--c:oklch(58% 0.13 140)">N</div>
+            <div>
+              <div class="testimonial-name">Nina T.</div>
+              <div class="testimonial-role">European Rail, 2025</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-mark">✦</span>
+          <span class="logo-text">Wandersplit</span>
+        </a>
+        <p class="footer-tagline">Beautiful group expense splitting for the modern traveler.</p>
+        <div class="footer-socials">
+
+          <!-- Instagram -->
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+
+          <!-- Twitter / X -->
+          <a href="#" class="social-btn" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/ramiissa303" class="social-btn" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2025 Wandersplit. All rights reserved.</p>
+        <p class="footer-made">Made for travelers who'd rather be exploring.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════
+       TOAST + MODAL (shared UI)
+  ══════════════════════════════════════ -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <h3 class="modal-title" id="modalTitle">Confirm</h3>
+      <p class="modal-body" id="modalBody"></p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="modalCancel">Cancel</button>
+        <button class="btn btn-danger" id="modalConfirm">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
